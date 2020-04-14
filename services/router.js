@@ -3,6 +3,7 @@ const router = new express.Router();
 //const employees = require('../controllers/employees.js');
 const fantasyquery1 = require('../controllers/fantasyquery1.js');
 const fantasyquery2 = require('../controllers/fantasyquery2.js');
+const fantasyquery3 = require('../controllers/fantasyquery3.js');
 const trendquery1 = require('../controllers/trendquery1.js');
 const trendquery2 = require('../controllers/trendquery2.js');
 const trendquery3 = require('../controllers/trendquery3.js');
@@ -17,6 +18,9 @@ router.route('/fantasyquery1')
 
 router.route('/fantasyquery2')
     .get(fantasyquery2.get);
+
+router.route('/fantasyquery3')
+    .get(fantasyquery3.get);
 
 router.route('/trendquery1')
     .get(trendquery1.get);
