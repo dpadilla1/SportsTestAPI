@@ -8,6 +8,7 @@ const trendquery1 = require('../controllers/trendquery1.js');
 const trendquery2 = require('../controllers/trendquery2.js');
 const trendquery3 = require('../controllers/trendquery3.js');
 const trendquery4 = require('../controllers/trendquery4.js');
+const trendquery5 = require('../controllers/trendquery5.js');
 const queryTest = require('../controllers/queryTest.js');
 const teams = require('../controllers/teams.js');
  
@@ -34,6 +35,9 @@ router.route('/trendquery3')
 
 router.route('/trendquery4')
     .get(trendquery4.get);
+
+router.route('/trendquery5')
+    .get(trendquery5.get);
 
 router.route('/queryTest')
     .get(queryTest.get);
