@@ -1,2 +1,7 @@
 # SportsTestAPI
-Unofficial API made from a tutorial and using it for testing.
+
+API that connects to UF Oracle Database and launches a server.
+
+Command to start server is:
+
+node index.js
